@@ -1,0 +1,72 @@
+/* Keep box-sizing globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent global overflow, but avoid killing navbar layout */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Slider Container */
+.slider-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scoped slide styles */
+.slider-container .slide {
+  height: 100vh;
+  width: 100vw;
+}
+
+.slider-container .background-image {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Scoped fix for slick internal layout */
+.slider-container .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+}
+
+.slider-container .slick-list {
+  overflow: hidden;
+}
+
+.slider-container .slick-track {
+  display: flex !important;
+}
+
+
+
+.vertical-marquee {
+  height: 300px; /* adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  position: absolute;
+  bottom: -100%; /* start from below */
+  width: 100%;
+  animation: scrollUp 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scrollUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
