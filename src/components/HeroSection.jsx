@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.css"; // Optional: for custom styles
+import OurManagement from "./OurManagement";
+import OurGallery from "./OurGallery";
 
 const images = ["/Images/one.jpg", "/Images/two.jpg", "/Images/three.jpg"];
 
@@ -53,7 +55,10 @@ function SimpleSlider() {
 				{/* Our Vision Section */}
 				<div className="flex flex-col justify-between h-full">
 					<div>
-						<h1 className="text-2xl font-bold mb-4">Our Vision</h1>
+						<h1 className="text-3xl font-semibold mb-4">
+							Our Vision{" "}
+							<div className="w-15 mt-4 h-[.12rem] bg-[#f1992d]"> </div>{" "}
+						</h1>
 						<p className="text-justify text-gray-700 mb-4">
 							The goal is to develop a national education system that fosters a
 							generation imbued with Hindutva and patriotism. This generation
@@ -68,15 +73,15 @@ function SimpleSlider() {
 						</p>
 					</div>
 					<div>
-          <button className="mt-4 px-6 py-3 bg-[#f1992d] hover:bg-black text-white font-semibold transition-all">
-						OUR CAMPUS
-					</button>
-          </div>
+						<button className="mt-4 px-6 py-3 bg-[#f1992d] hover:bg-black text-white font-semibold transition-all">
+							OUR CAMPUS
+						</button>
+					</div>
 				</div>
 
 				{/* News & Events Section */}
 				<div className="h-full flex flex-col">
-					<h1 className="text-2xl font-bold mb-4">News and Events</h1>
+					<h1 className="text-2xl font-semibold mb-4">News and Events</h1>
 					<div className="vertical-marquee bg-[#f0f0f0] relative p-4 rounded">
 						<div className="marquee-content text-red-500 font-bold animate-scroll-up text-sm">
 							<p className="p-5">
@@ -91,6 +96,42 @@ function SimpleSlider() {
 					</div>
 				</div>
 			</div>
+			{/* Library & Backgound image fixed Section */}
+
+			<div className="library-fixed-image h-screen md:mt-12 mt-5">
+				<div className="grid grid-cols-2 h-full w-full">
+					{/* Left side (image can be empty or hold something) */}
+					<div></div>
+
+					{/* Right side content with hidden scrollbar */}
+					<div className="bg-[#f1992d]/90 p-10 text-white overflow-y-auto hide-scrollbar md:mr-50">
+						<h2 className="text-3xl font-bold mb-8">Library</h2>
+						<p className="mb-4">
+							The school also has a spacious library room, which houses
+							approximately 10,000 textbooks, 300 life-inspiring books, 500
+							magazines, 20 different types of dictionaries in Hindi, English,
+							and Sanskrit, and 3,000 various other books. The library provides
+							books to students as per its facilities and schedule. The school
+							also has a reading room where students can sit during recess and
+							read motivational biographies, magazines such as Nandan, Champak,
+							Parag, Chandamama, Vigyan Pragati, Suman Saurabh, Balhans,
+							Panchjanya, Bal Bharati, Vidya Bharati, Pradeepika, and other
+							general knowledge books and newspapers. Newspapers like Amar
+							Ujala, Muzaffarnagar Bulletin, Uttarakhand Times, Jansatta, Punjab
+							Kesari, Rashtradev, Paschim Jyoti, Dainik Jagran, Royal Bulletin,
+							Times of India, Hindustan Times, and others are available daily.
+						</p>
+						<button className="bg-white text-black hover:border-2 hover:text-white font-medium px-6 py-3 hover:bg-transparent">
+							OUR CAMPUS
+						</button>
+					</div>
+				</div>
+			</div>
+			{/* our management section */}
+
+			<OurManagement></OurManagement>
+			<OurGallery></OurGallery>
+
 		</div>
 	);
 }
