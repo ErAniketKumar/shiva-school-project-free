@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaPen } from "react-icons/fa";
-
-
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io5";
+import { FaRegClock } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { TfiYoutube } from "react-icons/tfi";
 
 const Navbar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -19,23 +24,104 @@ const Navbar = () => {
 
 	return (
 		<div>
-			{/* Top Section */}
+			{/* Top first Navbar */}
 			<div
 				className={`bg-gray-800 text-white text-sm transition-all duration-300 ${
 					isScrolled ? "hidden" : "block"
 				} md:block`}
 			>
 				<div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-2">
-					<div className="mb-2 md:mb-0">
-						<span className="font-semibold">Call Now:</span> +91 9219405028
+					<div className="mb-2 md:mb-0 flex ">
+						<span className="font-semibold">
+							<IoCallSharp />
+						</span>{" "}
+						+91 9219405028
 					</div>
-					<div className="mb-2 md:mb-0">
-						<span className="font-semibold">Send Message:</span>{" "}
+					<div className="mb-2 md:mb-0 flex ">
+						<span className="font-semibold">
+							<MdEmail />
+						</span>{" "}
 						lalajpsvm123mzn@gmail.com
 					</div>
-					<div>
-						<span className="font-semibold">Our Location:</span> Jagdishpuram,
-						State Highway 12A, Muzaffarnagar, Uttar Pradesh 251001
+					<div className=" flex ">
+						<FaRegClock />
+
+						<span className="font-semibold">Opening: 8:00am - 2:00pm</span>
+					</div>
+					{/* navigation top social media icons */}
+
+					<div className="flex text-2xl">
+						<Link
+							className="hover:bg-white hover:text-[#f1992d] rounded-full p-2"
+							to=""
+						>
+							<FaFacebook />
+						</Link>
+						<Link
+							className="hover:bg-white hover:text-[#f1992d] rounded-full p-2"
+							to=""
+						>
+							<IoLogoInstagram />
+						</Link>
+						<Link
+							className="hover:bg-white hover:text-[#f1992d] rounded-full p-2"
+							to="https://www.youtube.com/channel/UCChwAKlyOKYnjL4xNOJn6Iw"
+							target="blank"
+						>
+							<TfiYoutube />
+						</Link>
+					</div>
+				</div>
+			</div>
+
+			{/* second logo wala navbar */}
+
+			<div className="flex justify-between mx-[4rem] py-6">
+				<div>
+					<img
+						src="/Images/logo.png"
+						alt="Logo"
+						className="w-28 h-28 object-contain"
+					/>
+				</div>
+
+				{/* Contact Section: hide mobile screen or md */}
+				<div className="hidden md:flex justify-end gap-4">
+					{/* Phone */}
+					<div className="flex gap-2">
+						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center">
+							<IoCallSharp className="text-xl text-[#f1992d]" />
+						</div>
+						<div>
+							<h4 className="text-lg font-medium">Call Now</h4>
+							<p className="text-gray-800">+91 9219405028</p>
+						</div>
+					</div>
+
+					{/* Email */}
+					<div className="flex gap-2">
+						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center">
+							<MdEmail className="text-xl text-[#f1992d]" />
+						</div>
+						<div>
+							<h4 className="text-lg font-medium">Send Message</h4>
+							<h5 className="text-gray-600">lalajpsvm123mzn@gmail.com</h5>
+						</div>
+					</div>
+
+					{/* Location */}
+					<div className="flex gap-2">
+						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center flex-shrink-0">
+							<FaLocationDot className="text-lg text-[#f1992d]" />
+						</div>
+						<div>
+							<h4 className="text-lg font-medium">Our Location</h4>
+							<p className="text-gray-800">
+								Jagdishpuram, State Highway 12A,
+								<br />
+								Muzaffarnagar, Uttar Pradesh 251001
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -48,8 +134,11 @@ const Navbar = () => {
 			>
 				<div className="max-w-7xl mx-[4rem] flex justify-between items-center h-16">
 					{/* Desktop Menu */}
-					<div className="hidden md:flex gap-6 h-16">
-						<NavLink to="/" className="hover:bg-[#f1992d] hover:text-white pt-5 px-3">
+					<div className="hidden md:flex gap-2 h-16">
+						<NavLink
+							to="/"
+							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
+						>
 							Home
 						</NavLink>
 						<NavLink
@@ -79,8 +168,11 @@ const Navbar = () => {
 					</div>
 
 					<div className="text-xl font-bold">
-                        <button  className="flex bg-[#f1992d] px-8 py-4 rounded-full text-white hover:bg-white hover:text-black text-sm"> <FaPen className="mt-1 mx-1" /> CONTACT NOW</button>
-                    </div>
+						<button className="flex bg-[#f1992d] px-8 py-4 rounded-full text-white hover:bg-white hover:text-black text-sm">
+							{" "}
+							<FaPen className="mt-1 mx-1" /> CONTACT NOW
+						</button>
+					</div>
 
 					{/* Mobile Menu Icon */}
 					<div className="md:hidden">

@@ -2,9 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./slider.css"; // Optional: for custom styles
+import "./slider.css";
 import OurManagement from "./OurManagement";
 import OurGallery from "./OurGallery";
+import ContactInfo from "./ContactInfo";
 
 const images = ["/Images/one.jpg", "/Images/two.jpg", "/Images/three.jpg"];
 
@@ -100,7 +101,6 @@ function SimpleSlider() {
 
 			<div className="library-fixed-image h-screen md:mt-12 mt-5">
 				<div className="grid grid-cols-2 h-full w-full">
-					{/* Left side (image can be empty or hold something) */}
 					<div></div>
 
 					{/* Right side content with hidden scrollbar */}
@@ -131,7 +131,7 @@ function SimpleSlider() {
 
 			<OurManagement></OurManagement>
 			<OurGallery></OurGallery>
-
+			<ContactInfo></ContactInfo>
 		</div>
 	);
 }
