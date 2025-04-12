@@ -25,12 +25,13 @@ const Navbar = () => {
 	return (
 		<div>
 			{/* Top first Navbar */}
+
 			<div
 				className={`bg-gray-800 text-white text-sm transition-all duration-300 ${
 					isScrolled ? "hidden" : "block"
 				} md:block`}
 			>
-				<div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 md:px-[4rem] py-4 gap-4">
+				<div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 md:px-[4rem] py-2 gap-4">
 					<div className=" flex gap-4 items-center">
 						<div className="flex items-center gap-2">
 							<span className="font-semibold">
@@ -137,36 +138,36 @@ const Navbar = () => {
 			>
 				<div className="max-w-7xl mx-[4rem] flex justify-between items-center h-16">
 					{/* Desktop Menu */}
-					<div className="hidden md:flex gap-2 h-16">
+					<div className="hidden md:flex font-medium gap-2 h-16">
 						<NavLink
 							to="/"
 							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
 						>
-							Home
+							HOME
 						</NavLink>
 						<NavLink
 							to="/campus"
 							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
 						>
-							Campus
+							CAMPUS
 						</NavLink>
 						<NavLink
 							to="/gallery"
 							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
 						>
-							Gallery
+							GALLERY
 						</NavLink>
 						<NavLink
 							to="/download"
 							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
 						>
-							Download
+							DOWNLOAD
 						</NavLink>
 						<NavLink
 							to="/news"
 							className="hover:bg-[#f1992d] hover:text-white pt-5 px-3"
 						>
-							News And Events
+							NEWS AND EVENTS
 						</NavLink>
 					</div>
 
@@ -188,21 +189,21 @@ const Navbar = () => {
 				{/* Mobile Menu */}
 				{isMobileMenuOpen && (
 					<div className="md:hidden px-4 pb-4">
-						<a href="#" className="block py-2 border-b">
-							Home
-						</a>
-						<a href="#" className="block py-2 border-b">
-							Campus
-						</a>
-						<a href="#" className="block py-2 border-b">
-							Gallery
-						</a>
-						<a href="#" className="block py-2 border-b">
-							Download
-						</a>
-						<a href="#" className="block py-2">
-							News And Events
-						</a>
+						<NavLink to="/" className="block py-2 border-b">
+							HOME
+						</NavLink>
+						<NavLink to="/campus" className="block py-2 border-b">
+							CAMPUS
+						</NavLink>
+						<NavLink to="/gallery" className="block py-2 border-b">
+							GALLERY
+						</NavLink>
+						<NavLink to="/download" className="block py-2 border-b">
+							DOWNLOAD
+						</NavLink>
+						<NavLink to="/news" className="block py-2">
+							NEWS AND EVENTS
+						</NavLink>
 					</div>
 				)}
 			</div>
