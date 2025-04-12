@@ -30,24 +30,27 @@ const Navbar = () => {
 					isScrolled ? "hidden" : "block"
 				} md:block`}
 			>
-				<div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-2">
-					<div className="mb-2 md:mb-0 flex ">
-						<span className="font-semibold">
-							<IoCallSharp />
-						</span>{" "}
-						+91 9219405028
-					</div>
-					<div className="mb-2 md:mb-0 flex ">
-						<span className="font-semibold">
-							<MdEmail />
-						</span>{" "}
-						lalajpsvm123mzn@gmail.com
-					</div>
-					<div className=" flex ">
-						<FaRegClock />
+				<div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 md:px-[4rem] py-4 gap-4">
+					<div className=" flex gap-4 items-center">
+						<div className="flex items-center gap-2">
+							<span className="font-semibold">
+								<IoCallSharp className="text-lg text-[#f1992d]" />
+							</span>{" "}
+							+91 9219405028
+						</div>
+						<div className="flex items-center gap-2">
+							<span className="font-semibold">
+								<MdEmail className="text-lg text-[#f1992d]" />
+							</span>{" "}
+							lalajpsvm123mzn@gmail.com
+						</div>
+						<div className="flex items-center gap-2">
+							<FaRegClock className="text-lg text-[#f1992d]" />
 
-						<span className="font-semibold">Opening: 8:00am - 2:00pm</span>
+							<span className="font-semibold">Opening: 8:00am - 2:00pm</span>
+						</div>
 					</div>
+
 					{/* navigation top social media icons */}
 
 					<div className="flex text-2xl">
