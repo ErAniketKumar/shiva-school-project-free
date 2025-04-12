@@ -13,7 +13,6 @@ const Campus = () => {
 			<HelpingPage pageInfo={pageInfo}></HelpingPage>
 
 			<div className=" md:mx-[4rem]">
-				
 				<div className="container mx-auto px-4 py-8">
 					<div className="flex flex-col items-center ">
 						<h1 className="text-4xl font-bold mb-2">
@@ -71,7 +70,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="../../public/Images/classroom.jpg"
+									src="/Images/classroom.jpg"
 									alt="Classrooms"
 									className="max-h-full"
 								/>
@@ -263,11 +262,7 @@ const Campus = () => {
 								</div>
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
-								<img
-									src="/Images/ncc.jpg"
-									alt="NCC"
-									className="max-h-full"
-								/>
+								<img src="/Images/ncc.jpg" alt="NCC" className="max-h-full" />
 							</div>
 						</div>
 					</div>

@@ -9,6 +9,15 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ErAniketKumar/shiva-school-project-free.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErAniketKumar/shiva-school-project-free/issues"
+  },
+  "homepage": "https://github.com/ErAniketKumar/shiva-school-project-free#readme",
+  "author": "ErAniketKumar",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.3",
     "lucide-react": "^0.487.0",
