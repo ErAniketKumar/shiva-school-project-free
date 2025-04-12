@@ -12,7 +12,7 @@ const Campus = () => {
 		<div>
 			<HelpingPage pageInfo={pageInfo}></HelpingPage>
 
-			<div className="min-h-screen bg-gray-50">
+			<div className=" md:mx-[4rem]">
 				{/* Main Content */}
 				<div className="container mx-auto px-4 py-8">
 					<div className="flex flex-col items-center ">
@@ -45,7 +45,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/labrotery.jpg"
 									alt="Science Laboratories"
 									className="max-h-full"
 								/>
@@ -71,7 +71,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="../../public/Images/classroom.jpg"
 									alt="Classrooms"
 									className="max-h-full"
 								/>
@@ -103,7 +103,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/reading.jpg"
 									alt="Library"
 									className="max-h-full"
 								/>
@@ -132,7 +132,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/reading.jpg"
 									alt="Computer Labs"
 									className="max-h-full"
 								/>
@@ -163,7 +163,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/allpagebg.jpg"
 									alt="ATL Lab"
 									className="max-h-full"
 								/>
@@ -202,7 +202,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/lab.jpg"
 									alt="Scout and Guide"
 									className="max-h-full"
 								/>
@@ -234,7 +234,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/sports.jpg"
 									alt="Sports"
 									className="max-h-full"
 								/>
@@ -264,7 +264,7 @@ const Campus = () => {
 							</div>
 							<div className="lg:w-1/2 h-64 bg-gray-200 flex items-center justify-center">
 								<img
-									src="/api/placeholder/600/300"
+									src="/Images/ncc.jpg"
 									alt="NCC"
 									className="max-h-full"
 								/>
