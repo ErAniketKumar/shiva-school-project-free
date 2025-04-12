@@ -26,7 +26,7 @@ const ContactInfo = () => {
 						referrerPolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>
-				{/* You can add contact details or a form here later */}
+				
 				<div className="flex flex-col gap-4">
 					<input
 						className="outline-none p-2 border"

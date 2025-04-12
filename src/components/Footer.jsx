@@ -69,7 +69,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<hr className="h-[.1rem] mt-10 bg-white" />
+			<hr className="h-[.1rem] mt-5 bg-white" />
 			{/* social media icon */}
 			<div className="z-11 relative flex flex-col items-center">
 				<div className="flex gap-4 p-2 text-2xl">

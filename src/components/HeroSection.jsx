@@ -7,7 +7,13 @@ import OurManagement from "./OurManagement";
 import OurGallery from "./OurGallery";
 import ContactInfo from "./ContactInfo";
 
-const images = ["/Images/one.jpg", "/Images/two.jpg", "/Images/three.jpg"];
+const images = [
+	"/Images/c2.jpg",
+	"/Images/c7.jpg",
+	"/Images/c5.jpg",
+	"/Images/c6.jpg",
+	"/Images/c3.jpg",
+];
 
 function SimpleSlider() {
 	const settings = {

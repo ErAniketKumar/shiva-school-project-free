@@ -13,7 +13,7 @@ const Campus = () => {
 			<HelpingPage pageInfo={pageInfo}></HelpingPage>
 
 			<div className=" md:mx-[4rem]">
-				{/* Main Content */}
+				
 				<div className="container mx-auto px-4 py-8">
 					<div className="flex flex-col items-center ">
 						<h1 className="text-4xl font-bold mb-2">

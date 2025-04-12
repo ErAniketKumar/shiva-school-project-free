@@ -21,16 +21,16 @@ const News = () => {
 				<div className="bg-gray-800 w-24 h-[.1rem] mb-10 mr-4"></div>
 			</div>
 
-			<div>
+			<div className=" mx-[4rem] flex flex-col md:gap-20 my-10">
 				<div>
 					<div>
-						<img src="" alt="" />
+						<img src="/Images/meetingnews.jpg" alt="" />
 					</div>
-					<div>
-						<h1 className="text-2xl font-semibold">
+					<div className="flex flex-col">
+						<h1 className="text-3xl font-semibold my-5">
 							विद्यालय के उन्नयन हेतु आधारभूत बिंदुओं पर परिचर्चा का आयोजन।
 						</h1>
-						<p>
+						<p className="text-sm text-gray-600">
 							राष्ट्र-निर्माण की अहम जिम्मेदारी आचार्य की होती है। आचार्य को
 							राष्ट्र के साथ-साथ विद्यालय के उन्नयन हेतु विभिन्न बिंदुओं को
 							ध्यान में रखते हुए नवाचार के साथ अपने आचार्यत्व के धर्म को निभाना
@@ -73,13 +73,15 @@ const News = () => {
 					</div>
 				</div>
 
-				<div>
+				<div className="flex flex-col">
 					<div>
-						<img src="" alt="" />
+						<img src="/Images/janamastminews.jpg" alt="" />
 					</div>
 					<div>
-						<h1 className="text-2xl font-semibold">विद्यालय में श्री कृष्ण जन्माष्टमी पर्व मनाया गया।</h1>
-						<p>
+						<h1 className="text-3xl font-semibold my-5">
+							विद्यालय में श्री कृष्ण जन्माष्टमी पर्व मनाया गया।
+						</h1>
+						<p className="text-sm text-gray-600">
 							जानसठ रोड स्थित लाला जगदीश प्रसाद सरस्वती विद्या मंदिर इंटर कॉलेज
 							में श्री कृष्ण जन्माष्टमी पर्व बड़े हर्षोल्लास के साथ मनाया गया।
 							कार्यक्रम का शुभारंभ प्रधानाचार्य सतीश उपाध्याय ने राधा-कृष्ण के

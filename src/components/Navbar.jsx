@@ -91,7 +91,7 @@ const Navbar = () => {
 
 				{/* Contact Section: hide mobile screen or md */}
 				<div className="hidden md:flex justify-end gap-4">
-					{/* Phone */}
+			
 					<div className="flex gap-2">
 						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center">
 							<IoCallSharp className="text-xl text-[#f1992d]" />
@@ -102,7 +102,7 @@ const Navbar = () => {
 						</div>
 					</div>
 
-					{/* Email */}
+				
 					<div className="flex gap-2">
 						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center">
 							<MdEmail className="text-xl text-[#f1992d]" />
@@ -113,7 +113,6 @@ const Navbar = () => {
 						</div>
 					</div>
 
-					{/* Location */}
 					<div className="flex gap-2">
 						<div className="rounded-full text-gray-300 w-10 h-10 border flex justify-center items-center flex-shrink-0">
 							<FaLocationDot className="text-lg text-[#f1992d]" />
@@ -172,10 +171,10 @@ const Navbar = () => {
 					</div>
 
 					<div className="text-xl font-bold">
-						<button className="flex bg-[#f1992d] px-8 py-4 rounded-full text-white hover:bg-white hover:text-black text-sm">
+						<NavLink to="/contact" className="flex bg-[#f1992d] px-8 py-4 rounded-full text-white hover:bg-white hover:text-black text-sm">
 							{" "}
 							<FaPen className="mt-1 mx-1" /> CONTACT NOW
-						</button>
+						</NavLink>
 					</div>
 
 					{/* Mobile Menu Icon */}

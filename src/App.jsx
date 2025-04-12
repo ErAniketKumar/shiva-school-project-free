@@ -7,6 +7,8 @@ import Campus from "./pages/Campus";
 import Gallery from "./pages/Gallery";
 import Download from "./pages/Download";
 import News from "./pages/News";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import ContactInfo from "./components/ContactInfo";
 
 const App = () => {
 	return (
@@ -18,8 +20,16 @@ const App = () => {
 				<Route path="/gallery" element={<Gallery />} />
 				<Route path="/download" element={<Download />} />
 				<Route path="/news" element={<News />} />
+				<Route path="/contact" element={<ContactInfo />} />
 			</Routes>
 			<Footer></Footer>
+
+			<div
+				className="h-10 w-10 rounded-full bg-[#f1992d] flex right-4 bottom-4 justify-center items-center text-white hover:bg-white hover:text-black text-2xl font-bold hover:border fixed cursor-pointer"
+				onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+			>
+				<MdKeyboardArrowUp />
+			</div>
 		</div>
 	);
 };
